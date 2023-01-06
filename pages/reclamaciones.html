@@ -153,11 +153,23 @@
                         <input type="text" name="amount" id="amount" placeholder="Monto" class="w-full">
                     </div>
                 </div>
-
+                <div class="flex flex-row">
+                    <div class="w-full lg:w-6/12">
+                        <input type="radio" id="reclamo" name="type" value="Reclamo"
+                               checked>
+                        <label for="huey">Reclamo</label>
+                    </div>
+                  
+                    <div class="w-full lg:w-6/12">
+                        <input type="radio" id="queja" name="type" value="Queja">
+                        <label for="dewey">Queja</label>
+                    </div>
+                </div>
+                
                 
                 <!-- <input type="hidden" name="country" id="country" value="Perú"> -->
                 <!-- <input type="file" name="attachment" > -->
-                <textarea name="message" id="message" placeholder="Reclamo"></textarea>
+                <textarea name="message" id="message" placeholder="Detalle"></textarea>
 		        <input type="hidden" name="_next" value="http://34.133.111.3/">
 		        <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="Libro de Reclamaciones">
