@@ -70,10 +70,10 @@
         </nav>
         <div class="header_conversemos_content container flex flex-col items-center">
             <div>
-                <h3 class="mega">write us</h3>
+                <h3 class="mega">complaints book</h3>
             </div>
             <div>
-                <p>we will solve all your doubts</p>
+                <p></p>
             </div>
         </div>
     </header>
@@ -127,10 +127,54 @@
         <div class="formulario_content w-full lg:w-6/12">
             <h3>Let's talk</h3>
             <form action="#" class="flex flex-col gap-5">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="text" name="cel" id="cel" placeholder="Cellphone">
+                <div class="flex flex-row">
+                    <div class="w-full lg:w-6/12">
+                        <input type="text" name="name" id="name" placeholder="Full Name" class="w-full">
+                    </div>
+                    <div class="w-full lg:w-6/12">
+                        <input type="email" name="email" id="email" placeholder="Email" class="w-full">
+                    </div>
+                </div>
+		        <input type="text" name="address" id="address" placeholder="Address">
+                <div class="flex flex-row">
+                    <div class="w-full lg:w-6/12">
+                        <input type="text" name="dni" id="dni" placeholder="DNI" class="w-full">
+                    </div>
+                    <div class="w-full lg:w-6/12">
+                        <input type="text" name="cel" id="cel" placeholder="Cellphone" class="w-full">
+                    </div>
+                </div>
+                <input type="text" name="parents" id="parents" placeholder="Name of the Father or Mother">
+                <div class="flex flex-row">
+                    <div class="w-full lg:w-6/12">
+                        <select name="proyect" id="proyect" class="w-full">
+                            <option value="28 DE JULIO 1365">28 DE JULIO 1365</option>
+                            <option value="MMXX BARRANCO">MMXX BARRANCO</option>
+                        </select>
+                    </div>
+                    <div class="w-full lg:w-6/12">
+                        <input type="text" name="amount" id="amount" placeholder="Amount" class="w-full">
+                    </div>
+                </div>
+                <div class="flex flex-row">
+                    <div class="w-full lg:w-6/12">
+                        <input type="radio" id="reclamo" name="type" value="Claim"
+                               checked>
+                        <label for="huey">Claim</label>
+                    </div>
+                  
+                    <div class="w-full lg:w-6/12">
+                        <input type="radio" id="queja" name="type" value="Complain">
+                        <label for="dewey">Complain</label>
+                    </div>
+                </div>
+                <input type="hidden" name="country" id="country" value="EEUU">
                 <textarea name="message" id="message" placeholder="Question"></textarea>
+
+                <input type="hidden" name="_next" value="http://34.133.111.3/">
+		        <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Complaints book">
+
                 <button type="submit" class="flex flex-row gap-2 items-center">
                     <div>
                         <span>Send</span>
