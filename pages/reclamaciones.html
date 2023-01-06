@@ -127,8 +127,15 @@
         <div class="formulario_content w-full lg:w-6/12">
             <h3>Escriba su Reclamo</h3>
             <form action="https://formsubmit.co/conversemos@libreinmobiliaria.com" method="post" class="flex flex-col gap-5" enctype="multipart/form-data">
-		        <input type="email" name="email" id="email" placeholder="Email">
-                <input type="text" name="name" id="name" placeholder="Nombre y Apellido">
+                <div class="flex flex-row">
+                    <div class="w-full lg:w-6/12">
+                        <input type="text" name="name" id="name" placeholder="Nombre y Apellido" class="w-full">
+                    </div>
+                    <div class="w-full lg:w-6/12">
+                        <input type="email" name="email" id="email" placeholder="Email" class="w-full">
+                    </div>
+                </div>
+		        <input type="text" name="address" id="address" placeholder="Domicilio">
                 <div class="flex flex-row">
                     <div class="w-full lg:w-6/12">
                         <input type="text" name="dni" id="dni" placeholder="DNI" class="w-full">
@@ -137,8 +144,18 @@
                         <input type="text" name="cel" id="cel" placeholder="Celular" class="w-full">
                     </div>
                 </div>
-                <input type="text" name="proyect" id="proyect" placeholder="Proyecto">
-                <input type="hidden" name="country" id="country" placeholder="Perú">
+                <input type="text" name="parents" id="parents" placeholder="Nombre del Padre o Madre">
+                <div class="flex flex-row">
+                    <div class="w-full lg:w-6/12">
+                        <input type="text" name="proyect" id="proyect" placeholder="Proyecto" class="w-full">
+                    </div>
+                    <div class="w-full lg:w-6/12">
+                        <input type="text" name="amount" id="amount" placeholder="Monto" class="w-full">
+                    </div>
+                </div>
+
+                
+                <!-- <input type="hidden" name="country" id="country" value="Perú"> -->
                 <!-- <input type="file" name="attachment" > -->
                 <textarea name="message" id="message" placeholder="Reclamo"></textarea>
 		        <input type="hidden" name="_next" value="http://34.133.111.3/">
